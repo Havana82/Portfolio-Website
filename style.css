@@ -7,6 +7,7 @@
     height: 40vh;
     grid-row: 3/5;
     grid-column: 3/5;
+    padding-top: 80px;
 }
 .about-heading{
     font-size: 30px;
@@ -24,6 +25,7 @@
     display:block;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-top: 40px;
 }
    
 
@@ -40,7 +42,7 @@
     border: solid white;
     border-width:thick;
     border-radius: 40px;
-    padding: 20px;
+    padding: 50px;
     color: whitesmoke;
     background-color: rgb(3, 11, 55) ;
 }
@@ -207,7 +209,7 @@ span:nth-child(2n+1) {
     font-size: larger;
 }
 
-.tab-items p:nth-child(2n+1){
+.tab-1 p:nth-child(1){
     color: lightcoral;
 }
 
@@ -228,3 +230,7 @@ span:nth-child(2n+1) {
     grid-template-rows: 2fr 2fr 2fr 2fr;
     
 }
+
+#tab-info1{
+    border: solid;
+} 
