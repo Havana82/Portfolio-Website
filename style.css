@@ -46,6 +46,7 @@
     border-radius: 40px;
     padding: 50px;
     color: whitesmoke;
+    margin-top: 20px;
     background-color: rgb(3, 11, 55) ;
 }
 nav ul li a {
@@ -70,6 +71,7 @@ body{
     color: whitesmoke;
     max-width: 70%;
     grid-column: 2/6;
+    font-size: larger;
 }
 
 .details p {
@@ -241,8 +243,22 @@ span:nth-child(2n+1) {
 
 
 } 
+.tab-info2{
+    border: solid;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: black;
+    background-color: lightskyblue;
+    margin-bottom: 50px;
+    display: none;
+
+
+} 
 
 .tab-info1.tab-links{
+    display: block;
+}
+.tab-info2.tab-links{
     display: block;
 }
 

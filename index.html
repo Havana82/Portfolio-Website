@@ -51,14 +51,14 @@
                     <div class="tab-items">
                         <div class="tab-1">
                             <button class="tab-links "> Experience -- click me </button>
-                            <p class="tab-info1 box ">
+                            <p class="tab-info1 ">
                                 Work on real world proiects using JavaScript. <br> Python. React JS. and PostaresOL <br> Actively develop skills by continuously learning <br> new technologles and improving acquired skill <br>
                                 Intensive training on collaboration and tech industry <br> standards through real world broiects assigned from <br> partners</p>
                         </div>
                         <div class="tab-1">
-                            <button class="tab-links " > Education -- click me</button>
-                            <p class="tab-info1 box">
-                                Ful Stack Web Development <br> Ada Developers Academy <br>
+                            <button class="tab-links2 " > Education -- click me</button>
+                            <p class="tab-info2 ">
+                                Full Stack Web Development <br> Ada Developers Academy <br>
                                 Seattle, Washington, 2022 - 2023 <br>ntensive one year training on front end, <br>
                                 backend web development and database management. <br>
                                 <br>
@@ -76,7 +76,9 @@
     <script>
 
         const tablinks = document.querySelector('.tab-links')
+        const tablinks2 = document.querySelector('.tab-links2')
         const hiddencontent = document.querySelector('.tab-info1')
+        const hiddencontent2 = document.querySelector('.tab-info2')
         function reavealContent(){
             if(hiddencontent.classList.contains('tab-links')){
                     hiddencontent.classList.remove('tab-links')
@@ -84,7 +86,15 @@
                     hiddencontent.classList.add('tab-links')
             }
             }
+        function reavealContent2(){
+            if(hiddencontent2.classList.contains('tab-links')){
+                    hiddencontent2.classList.remove('tab-links')
+            }else{
+                    hiddencontent2.classList.add('tab-links')
+            }
+            }
         tablinks.addEventListener('click',reavealContent );
+        tablinks2.addEventListener('click',reavealContent2 );
     </script>
 </body>
 </html>
