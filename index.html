@@ -50,14 +50,14 @@
                     </div>
                     <div class="tab-items">
                         <div class="tab-1">
-                            <button class="tab-links"> Experience -- click me </button>
-                            <p class="tab-info1 active-link" id="experience">
+                            <button class="tab-links "> Experience -- click me </button>
+                            <p class="tab-info1 box ">
                                 Work on real world proiects using JavaScript. <br> Python. React JS. and PostaresOL <br> Actively develop skills by continuously learning <br> new technologles and improving acquired skill <br>
                                 Intensive training on collaboration and tech industry <br> standards through real world broiects assigned from <br> partners</p>
                         </div>
                         <div class="tab-1">
-                            <button class="tab-links" > Education -- click me</button>
-                            <p class="tab-info1 active-link" id="education">
+                            <button class="tab-links " > Education -- click me</button>
+                            <p class="tab-info1 box">
                                 Ful Stack Web Development <br> Ada Developers Academy <br>
                                 Seattle, Washington, 2022 - 2023 <br>ntensive one year training on front end, <br>
                                 backend web development and database management. <br>
@@ -74,10 +74,17 @@
 
     </main>
     <script>
-       
-        
-            
-        
+
+        const tablinks = document.querySelector('.tab-links')
+        const hiddencontent = document.querySelector('.tab-info1')
+        function reavealContent(){
+            if(hiddencontent.classList.contains('tab-links')){
+                    hiddencontent.classList.remove('tab-links')
+            }else{
+                    hiddencontent.classList.add('tab-links')
+            }
+            }
+        tablinks.addEventListener('click',reavealContent );
     </script>
 </body>
 </html>
